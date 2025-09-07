@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page with JavaScript</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <!-- Counter Game -->
+  <section id="counter-section">
+    <h2>Click Counter Game</h2>
+    <p>How many times can you click the button?</p>
+    <button id="counter-btn">Click Me!</button>
+    <p id="counter-value">Count: 0</p>
+  </section>
+
+  <!-- Collapsible FAQ -->
+  <section id="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <div class="faq-answer">
+        JavaScript is a programming language used to make web pages interactive.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What is DOM manipulation?</button>
+      <div class="faq-answer">
+        It's the process of changing the structure, style, or content of a webpage using JavaScript.
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Why is form validation important?</button>
+      <div class="faq-answer">
+        It ensures users provide correct and secure information before submitting.
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="form-section">
+    <h2>Contact Form</h2>
+    <form id="contact-form" novalidate>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+      <small class="error" id="name-error"></small>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+      <small class="error" id="email-error"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <small class="error" id="password-error"></small>
+
+      <button type="submit">Submit</button>
+      <p id="form-success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
